@@ -3,8 +3,8 @@ import { combineReducers } from 'redux'
 import ui from './ui'
 
 const createRootReducer = () =>
-  combineReducers({
-    ui,
-  })
+    combineReducers({
+        ui,
+    })
 
 export default createRootReducer
