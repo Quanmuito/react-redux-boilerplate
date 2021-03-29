@@ -3,14 +3,11 @@ import createSagaMiddleware from 'redux-saga'
 import thunk from 'redux-thunk'
 
 import { AppState } from '../types'
+import initialState from './initialState'
 import createRootReducer from './reducers'
 import rootSaga from './sagas'
 
-const initState: AppState = {
-    ui: {
-        dialogOpen: {},
-    },
-}
+const initState: AppState = initialState()
 
 export default function makeStore(initialState = initState) {
     const sagaMiddleware = createSagaMiddleware()

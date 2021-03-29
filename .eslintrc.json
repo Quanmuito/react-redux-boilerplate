@@ -1,17 +1,17 @@
 {
-  "extends": ["react-app", "plugin:jsx-a11y/recommended"],
-  "plugins": ["jsx-a11y", "react"],
-  "rules": {
-    "indent": ["off", 4],
-    "no-unused-vars": ["error"],
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error"
-  },
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "paths": ["src"]
-      }
+    "extends": ["react-app", "plugin:jsx-a11y/recommended"],
+    "plugins": ["jsx-a11y", "react"],
+    "rules": {
+        "indent": ["off", 4],
+        "no-unused-vars": ["warn"],
+        "react/jsx-uses-react": "warn",
+        "react/jsx-uses-vars": "warn"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"]
+            }
+        }
     }
-  }
 }
