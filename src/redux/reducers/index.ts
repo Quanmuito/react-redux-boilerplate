@@ -1,10 +1,5 @@
 import { combineReducers } from 'redux'
 
-import ui from './ui'
-
-const createRootReducer = () =>
-    combineReducers({
-        ui,
-    })
+const createRootReducer = () => combineReducers({})
 
 export default createRootReducer

@@ -1,1 +1,1 @@
-export * from './uiTypes'
+export type AppState = any
