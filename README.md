@@ -4,9 +4,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Installation
 
-Use either `npm` or `yarn` but `not both`. It's recommeded to use `yarn`.
+Use either `npm` or `yarn` but `not both`.
 
-This template already comes with all needed packages. In case you want to install manually, check the dependencies in `package.json` file. To install, run:
+This template already comes with all needed packages. In case you want to install manually, check the dependencies in `package.json` file. All packages had been updated to the `lastest major verion` (until March 2021). To install, run:
+
+```
+yarn install
+```
+
+or
 
 ```
 yarn install
@@ -45,13 +51,13 @@ yarn install
 The template comes with ready-made code for a very simple working demo (products list). To play around with it, run:
 
 ```
-yarn start
+npm start
 ```
 
 or
 
 ```
-npm start
+yarn start
 ```
 
 ## Modify or add new features

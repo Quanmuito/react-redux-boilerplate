@@ -1,5 +1,3 @@
-$primary-color: rgb(190, 13, 13);
-$secondary-color: #0f0f0f;
 $color-grey: #626c74;
 $color-lgrey: rgb(224, 227, 230);
 $color-red: #d3434d;
@@ -7,6 +5,8 @@ $color-lred: #ff9aa1;
 $color-lblue: #7bbfbf;
 $color-dblue: #06a0b3;
 $color-lblue2: #b2f7f7;
+$primary-color: #b3063a;
+$secondary-color: #b36b06;
 
 @mixin flex-center {
     display: flex;
@@ -15,14 +15,18 @@ $color-lblue2: #b2f7f7;
     justify-content: center;
 }
 
-@mixin media-sm {
-    @media screen and (min-width: 770px) {
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
         @content;
     }
 }
 
 @mixin media-lg {
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1024px) {
         @content;
     }
 }

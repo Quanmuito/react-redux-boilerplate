@@ -3,7 +3,7 @@ import React from 'react'
 import useHook from 'hooks/useHook'
 
 const Landing = () => {
-    return <h1>{useHook()}</h1>
+    return <h1 className="text-center">{useHook()}</h1>
 }
 
 export default Landing

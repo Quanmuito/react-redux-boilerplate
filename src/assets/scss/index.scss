@@ -1,25 +1,48 @@
-@import './config';
-@import './layouts/layouts';
+@import '~bootstrap/scss/bootstrap';
+@import 'config';
+@import 'layouts/layouts';
 
-*,
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-        'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+}
 
-    .App {
-        text-align: center;
+body {
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
 
-        main {
-            width: 90%;
-            min-height: calc(100vh - 160px);
-            margin: auto;
-            padding-top: 170px;
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+main {
+    width: 90%;
+    min-height: calc(100vh - 230px);
+    margin: auto;
+    padding-top: 100px;
+
+    section {
+        h1 {
+            @include flex-center;
+            padding: 150px 0;
+            font-size: 30px;
         }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 19px;
+        }
+    }
+
+    td {
+        width: 25%;
     }
 }
