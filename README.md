@@ -6,10 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Use either `npm` or `yarn` but `not both`.
 
-This template already comes with all needed packages. In case you want to install manually, check the dependencies in `package.json` file. All packages had been updated to the `lastest major verion` (until March 2021). To install, run:
+This template already comes with all needed packages. In case you want to install manually, check the dependencies in `package.json` file. All packages had been updated to the `lastest major verion`, up to `March 2021`. To install, run:
 
 ```
-yarn install
+npm install
 ```
 
 or
@@ -73,15 +73,6 @@ Follow the file/folder structure as explained below to make necessary changes. F
     src/assets/scss/index.scss
     ```
 
-    `@ Default folder and files`:
-
-    ```
-    src/assets/images
-    src/assets/scss/layouts
-    src/assets/scss/index.scss
-    src/assets/scss/_config_.scss
-    ```
-
 -   `src/components`: React components. For each component, it's better to put it in a separate folder. For example:
 
     ```
@@ -91,24 +82,11 @@ Follow the file/folder structure as explained below to make necessary changes. F
     src/components/Button/Button.test.tsx
     ```
 
-    `@ Default folder and files`:
-
-    ```
-    src/components/layouts
-    src/components/landing
-    ```
-
 -   `src/hooks`: Custom hooks. For example:
 
     ```
     src/hooks/useProduct.ts
     src/hooks/useUser.ts
-    ```
-
-    `@ Default folder and files`:
-
-    ```
-    src/hooks/useHook
     ```
 
 -   `src/redux`: Everything (such as actions, reducers, sagas etc) related to Redux
