@@ -7,7 +7,7 @@ export function Header() {
     return (
         <header>
             <a href="/" className="brand">
-                QMT
+                NavBar
             </a>
             <div
                 role="none"

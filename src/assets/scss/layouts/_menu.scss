@@ -7,6 +7,11 @@
     cursor: pointer;
     z-index: 1;
     @include transition-ease;
+    visibility: hidden;
+
+    @include media-mb {
+        visibility: visible;
+    }
 
     &__burger {
         position: absolute;
@@ -59,33 +64,52 @@
     left: 0;
     width: 100vw;
     height: 100px;
+    padding-right: 100px;
     display: block;
     opacity: 0.98;
-    visibility: hidden;
+    visibility: visible;
+
+    @include media-mb {
+        visibility: hidden;
+        padding: 0;
+    }
 
     &.open {
         visibility: visible;
     }
 
     .menu-nav {
-        @include flex-center;
-        height: 100vh;
+        height: 100%;
         margin: 0;
-        flex-flow: column wrap;
-        text-align: center;
+        display: block;
         overflow: hidden;
         list-style: none;
-        transform: translateY(-100%);
-        background: $color-dblue;
+        transform: translateY(0);
+        background: transparent;
+        text-align: right;
         @include transition-ease;
+
+        @include media-mb {
+            @include flex-center;
+            flex-flow: column wrap;
+            height: 100vh;
+            transform: translateY(-100%);
+            background: $color-dblue;
+            text-align: center;
+        }
 
         &.open {
             transform: translateY(0);
         }
 
         &__item {
-            transform: translateX(100vh);
+            display: inline;
+            padding-right: 1.5rem;
             @include transition-ease;
+
+            @include media-mb {
+                transform: translateX(100vh);
+            }
 
             &.open {
                 transform: translateX(0);
@@ -95,41 +119,17 @@
         &__link {
             padding: 2rem 0;
             display: inline-block;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 500;
             color: $primary-color;
             @include transition-ease;
 
+            @include media-mb {
+                font-size: 2rem;
+            }
+
             &:hover {
                 color: $secondary-color;
-            }
-        }
-    }
-}
-
-@include media-lg {
-    .menu-btn {
-        visibility: hidden;
-    }
-
-    .nav {
-        visibility: visible;
-        padding-right: 100px;
-
-        .menu-nav {
-            display: block;
-            transform: translateY(0);
-            height: 100%;
-            background: transparent;
-            text-align: right;
-
-            &__item {
-                display: inline;
-                padding-right: 1.5rem;
-            }
-
-            &__link {
-                font-size: 1.5rem;
             }
         }
     }

@@ -22,27 +22,7 @@ h3 {
 
 main {
     width: 90%;
-    min-height: calc(100vh - 230px);
+    min-height: calc(100vh - 120px);
     margin: auto;
     padding-top: 100px;
-
-    section {
-        h1 {
-            @include flex-center;
-            padding: 150px 0;
-            font-size: 30px;
-        }
-
-        h2 {
-            font-size: 24px;
-        }
-
-        h3 {
-            font-size: 19px;
-        }
-    }
-
-    td {
-        width: 25%;
-    }
 }
